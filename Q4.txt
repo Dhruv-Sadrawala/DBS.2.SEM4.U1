@@ -1,0 +1,25 @@
+DECLARE
+  year NUMBER(4):='&year';
+BEGIN
+
+  IF MOD(year, 4) = 0 THEN
+
+    IF MOD(year, 100) < 0 or MOD(year, 100) > 0 THEN
+  
+        dbms_output.put_line(year || ' is a leap year.');
+    ELSE
+  
+      IF MOD(year, 400) = 0 THEN
+    
+        dbms_output.put_line(year || ' is a leap year.');
+      ELSE
+    
+        dbms_output.put_line(year || ' is not a leap year.');
+      END IF;
+    END IF;
+  ELSE
+
+    dbms_output.put_line(year || ' is not a leap year.');
+  END IF;
+END;
+/

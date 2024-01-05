@@ -1,0 +1,23 @@
+declare
+subject_one number:=&subject_one;
+subject_two number:=&subject_two;
+subject_three number:=&subject_three;
+total number(4);
+begin
+
+total := subject_one + subject_two + subject_three;
+   
+  if total >= 60 then
+   dbms_output.put_line('First Division');
+  elsif total < 60 and total >= 50 then
+   dbms_output.put_line('Second Division');
+  elsif total < 50 and total >= 35 then
+   dbms_output.put_line('Third Division');
+  else
+   dbms_output.put_line('Fail');
+  end if;
+  
+
+  dbms_output.put_line('Completed');
+end;
+/

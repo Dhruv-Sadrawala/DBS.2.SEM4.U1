@@ -1,0 +1,10 @@
+declare
+  input_string varchar2(50) := '&string';
+
+begin
+
+  for i in 1..length(input_string) loop
+    dbms_output.put_line(substr(input_string, 1, i));
+  end loop;
+end;
+/

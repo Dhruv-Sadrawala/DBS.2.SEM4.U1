@@ -1,0 +1,11 @@
+declare
+num number(2):=&num;
+multip number(2);
+pro number(3);
+begin
+for multip in 1..10 loop
+pro:=(num*multip);
+ dbms_output.put_line(num ||' X ' ||multip ||' = ' ||pro);
+ end loop;
+end;
+/

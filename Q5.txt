@@ -1,0 +1,22 @@
+declare
+
+qty number=:&number;
+price number=&price;
+disc number(5);
+exp number(5);
+
+begin
+
+--5.i) If qty purchased > 1000 discount is 20% ii) 
+If the qty and price per item are i/p then calculate the expenditure
+
+ if qty > 1000 then
+  disc:=((qty*price)*20)/100;
+  exp:=(qty*price)-disc;
+  dbms_output.put_line('Expenditure after discount is '||exp);
+ else
+  exp:=qty*price;
+  dbms_output.put_line('Expenditure is '||exp);
+ end if;
+end;
+/

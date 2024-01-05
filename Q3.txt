@@ -1,0 +1,10 @@
+declare
+ch CHAR(1):='&ch';
+begin
+ if lower(ch) in ('a','e','i','o','u') then
+   dbms_output.put_line(ch||' is a vowel');
+ else 
+   dbms_output.put_line(ch||' is a consonant');
+ end if;
+end;
+/

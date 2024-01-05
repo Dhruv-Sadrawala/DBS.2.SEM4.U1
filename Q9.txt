@@ -1,0 +1,13 @@
+DECLARE
+  curr_timestamp TIMESTAMP;
+  interval_var INTERVAL DAY TO SECOND;
+BEGIN
+  -- Print the current timestamp
+  curr_timestamp := SYSTIMESTAMP;
+  dbms_output.put_line('Current Timestamp: ' || curr_timestamp);
+
+  -- Assign to interval variable
+  interval_var := INTERVAL '0' DAY TO SECOND;
+  dbms_output.put_line('Interval: ' || interval_var);
+END;
+/

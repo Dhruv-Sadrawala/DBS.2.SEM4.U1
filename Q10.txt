@@ -1,0 +1,16 @@
+begin
+--execute create table command before begin block.
+--create table manager(manager_no varchar2(5),name varchar2(20), no_of_emp varchar2(5));
+
+insert into manager(manager_no,name,no_of_emp)values(1,'ABC',250);
+insert into manager(manager_no,name,no_of_emp)values(2,'FSH',780);
+insert into manager(manager_no,name,no_of_emp)values(3,'YHG',720);
+insert into manager(manager_no,name,no_of_emp)values(4,'XTS',301);
+insert into manager(manager_no,name,no_of_emp)values(5,'IJH',980);
+insert into manager(manager_no,name,no_of_emp)values(6,'SOW',201);
+
+--select *from manager;
+--and select command after end block.
+
+end;
+/
