@@ -12,6 +12,6 @@ insert into manager(manager_no,name,no_of_emp)values(6,'SOW',201);
 --remove this select query before running this query and run it seperately
 --select *from manager where name='&accept';
 --and select command after end block.
-
+--remove all comments for clean usage.
 end;
 /
