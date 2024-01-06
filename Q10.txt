@@ -9,7 +9,8 @@ insert into manager(manager_no,name,no_of_emp)values(4,'XTS',301);
 insert into manager(manager_no,name,no_of_emp)values(5,'IJH',980);
 insert into manager(manager_no,name,no_of_emp)values(6,'SOW',201);
 
---select *from manager;
+--remove this select query before running this query and run it seperately
+--select *from manager where name='&accept';
 --and select command after end block.
 
 end;
