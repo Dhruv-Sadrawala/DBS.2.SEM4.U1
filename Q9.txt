@@ -1,13 +1,22 @@
 DECLARE
-  curr_timestamp TIMESTAMP;
-  interval_var INTERVAL DAY TO SECOND;
+  hour number;
 BEGIN
-  -- Print the current timestamp
-  curr_timestamp := SYSTIMESTAMP;
-  dbms_output.put_line('Current Timestamp: ' || curr_timestamp);
+ 
+  hour := TO_CHAR(SYSTIMESTAMP,'HH24');
+  dbms_output.put_line('Current Timestamp: ' || hour);
 
-  -- Assign to interval variable
-  interval_var := INTERVAL '0' DAY TO SECOND;
-  dbms_output.put_line('Interval: ' || interval_var);
-END;
+if hour > 5 and hour < 10 then
+ dbms_output.put_line('Morning');
+
+elsif hour > 10 and hour < 18  then
+ dbms_output.put_line('Noon');
+
+elsif hour > 18 and hour < 23  then
+ dbms_output.put_line('Evening');
+
+else
+ dbms_output.put_line('Night');
+
+end if;
+  END;
 /
