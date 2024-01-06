@@ -1,0 +1,20 @@
+begin
+
+--create table employee(emp_no varchar2(5),emp_salary varchar2(10));
+
+insert into employee(emp_no,emp_salary)values(01,2000);
+insert into employee(emp_no,emp_salary)values(02,2600);
+insert into employee(emp_no,emp_salary)values(03,2100);
+insert into employee(emp_no,emp_salary)values(04,2450);
+insert into employee(emp_no,emp_salary)values(05,2670);
+
+--select *from employee;
+
+
+update employee set emp_salary=((emp_salary*10)/100)+emp_salary where emp_salary < 2600;
+
+
+--select *from employee;
+
+end;
+/

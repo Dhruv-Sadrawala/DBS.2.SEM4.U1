@@ -1,0 +1,12 @@
+begin
+--execute create table command before begin block.
+--create table emp_5(emp_no varchar2(5),name varchar2(10),sal varchar2(10),exp varchar2(10),dname varchar2(20));
+
+insert into emp_5(emp_no,name,sal,exp,dname)values(&emp_no,'&name',&sal,&exp,'&dname');
+
+--remove this select query before running this query and run it seperately
+--delete (name,sal) from emp_5;
+--and select command after end block.
+--remove all comments for clean usage.
+end;
+/

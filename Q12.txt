@@ -1,0 +1,16 @@
+begin
+--execute create table command before begin block.
+--create table emp_2(emp_no varchar2(5),dept varchar2(20), salgrade varchar2(5));
+
+insert into emp_2(emp_no,dept,salgrade)values(1,'ABC','A');
+insert into emp_2(emp_no,dept,salgrade)values(2,'SWQ','C');
+insert into emp_2(emp_no,dept,salgrade)values(3,'TYV','B');
+insert into emp_2(emp_no,dept,salgrade)values(4,'YUI','E');
+insert into emp_2(emp_no,dept,salgrade)values(5,'IOJ','F');
+
+--remove this select query before running this query and run it seperately
+--select *from emp_2 where emp_no='&employee_number';
+--and select command after end block.
+--remove all comments for clean usage.
+end;
+/

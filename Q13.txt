@@ -1,0 +1,16 @@
+begin
+--execute create table command before begin block.
+--create table emp_3(emp_no varchar2(5),name varchar2(10),exp varchar2(10),dname varchar2(20),grade varchar2(5),loc varchar(10));
+
+insert into emp_3(emp_no,name,exp,dname,grade,loc)values(1,'FGT',16,'SALES','A',101);
+insert into emp_3(emp_no,name,exp,dname,grade,loc)values(2,'TYH',17,'MARKETING','B',102);
+insert into emp_3(emp_no,name,exp,dname,grade,loc)values(3,'UIO',20,'PR','E',103);
+insert into emp_3(emp_no,name,exp,dname,grade,loc)values(4,'QWE',20,'PURCHASE','A',104);
+insert into emp_3(emp_no,name,exp,dname,grade,loc)values(5,'THV',5,'MARKETING','C',105);
+
+--remove this select query before running this query and run it seperately
+--select *from emp_3 where emp_no='&employee_number';
+--and select command after end block.
+--remove all comments for clean usage.
+end;
+/

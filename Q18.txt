@@ -1,0 +1,9 @@
+begin
+--create table emp_4(emp_no varchar2(10),salary varchar2(10));
+
+insert into emp_4(emp_no,salary)values(&emp_no,&salary);
+
+update emp_4 set salary=4000 where salary < 3000;
+
+end;
+/

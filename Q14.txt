@@ -1,0 +1,11 @@
+declare
+age number(3):=&age;
+weight number(4):=&weight;
+begin
+if age > 18 and age < 55 and weight > 45 then
+dbms_output.put_line('You are eligible.');
+else
+dbms_output.put_line('You are not eligible.');
+end if;
+end;
+/
